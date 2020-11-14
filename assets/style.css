@@ -52,6 +52,9 @@ li a:hover {
   width: 208px;
   height: 208px;
 }
+.project-link:hover {
+  border: solid 4px rgb(76, 18, 236);
+}
 .skills {
   position: relative;
   animation: upIn 2s ease-out forwards;
@@ -130,6 +133,9 @@ li a:hover {
   border: solid 4px rgb(149, 204, 230);
   border-radius: 50%;
   margin-right: 2em;
+}
+.contact-img:hover {
+  border: solid 4px rgb(76, 18, 236);
 }
 
 @keyframes bgScroll {
