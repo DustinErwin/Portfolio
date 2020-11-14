@@ -1,10 +1,13 @@
 body {
   background-color: #252222;
+  margin: 0;
 }
 nav {
   width: 100%;
 }
 ul {
+  z-index: 2;
+  opacity: 0.9;
   width: 100%;
   position: fixed;
   display: flex;
@@ -50,8 +53,8 @@ li a:hover {
   height: 208px;
 }
 .skills {
-  /* display: flex;
-  justify-content: space-around; */
+  position: relative;
+  animation: upIn 2s ease-out forwards;
 }
 
 @keyframes slide {
@@ -66,6 +69,7 @@ li a:hover {
   background-color: #252222;
 }
 .intro {
+  opacity: 0.9;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,11 +79,11 @@ li a:hover {
   margin-top: 5%;
   height: 600px;
 }
-.about {
-  /* display: flex;
-  justify-content: space-around; */
+.tools {
+  position: relative;
+  animation: upIn 2s ease-out forwards;
 }
-.about img {
+.tools img {
   width: 208px;
   height: 208px;
 }
@@ -106,6 +110,7 @@ li a:hover {
 }
 
 .img-me-pix {
+  opacity: 1;
   background-color: rgb(18, 86, 143);
   border: solid 4px rgb(149, 204, 230);
   border-radius: 50%;
@@ -119,14 +124,29 @@ li a:hover {
   border-radius: 5px; /* 5px rounded corners */
 }
 
-img {
-  border-radius: 5px 5px 0 0;
+.contact-img {
+  width: 64px;
+  background-color: rgb(18, 86, 143);
+  border: solid 4px rgb(149, 204, 230);
+  border-radius: 50%;
+  margin-right: 2em;
 }
+
 @keyframes bgScroll {
   from {
     background-position-x: 0%;
   }
   to {
     background-position-x: 100%;
+  }
+}
+@keyframes upIn {
+  from {
+    top: 400px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
   }
 }
