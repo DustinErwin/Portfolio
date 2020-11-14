@@ -1,41 +1,96 @@
 body {
-  background-color: darkslategray;
-  background-image: url("download.jpg");
-  background-size: cover;
-  background-position: center;
+  background-color: rgb(18, 86, 143);
 }
-.horizontal-scroll-wrapper {
-  width: 100%;
-  height: 52em;
+.container {
+  margin-top: 0;
+  overflow: hidden;
+}
 
-  overflow-y: hidden;
-  overflow-x: hidden;
-  white-space: nowrap;
+.sliding-background {
+  margin-top: 0;
+  z-index: -5;
+  position: fixed;
+  background: url("./images/fullBackground.png") repeat;
+  height: 2160px;
+  width: 23040px;
+  animation: slide 120s linear infinite;
 }
-.horizontal-scroll-wrapper > div {
-  display: inline-block;
-  margin-top: 0%;
-  width: 119em;
-  height: 55em;
+.project-link {
+  margin: 1em;
+  border: solid 4px rgb(149, 204, 230);
+  border-radius: 50%;
+  height: 5rem;
 }
+.skills {
+  display: flex;
+  justify-content: space-around;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-7680px, 0, 0);
+  }
+}
+.bg-color {
+  background-color: #252222;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("./images/graychev.png");
+  background-repeat: no-repeat;
+  background-position: top;
+
+  height: 600px;
+}
+.font-style {
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  color: steelblue;
+}
+.intro-info {
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 50%;
+}
+.line-break {
+  border-width: 0;
+  background-color: grey;
+  max-width: 25%;
+  height: 3px;
+  color: grey;
+  margin-bottom: 2em;
+}
+
+.img-me-pix {
+  background-color: rgb(18, 86, 143);
+  border: solid 4px rgb(149, 204, 230);
+  border-radius: 50%;
+  margin-top: 1em;
+  width: 128px;
+}
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 5px; /* 5px rounded corners */
 }
 
-/* Add rounded corners to the top left and the top right corner of the image */
 img {
   border-radius: 5px 5px 0 0;
 }
-/* .horizontal-scroll-wrapper {
-  transform: rotate(-90deg);
-  transform-origin: right top;
+@keyframes bgScroll {
+  from {
+    background-position-x: 0%;
+  }
+  to {
+    background-position-x: 100%;
+  }
 }
-.horizontal-scroll-wrapper > div {
-  transform: rotate(90deg);
-  transform-origin: right top;
-}
-.horizontal-scroll-wrapper {
-  transform: rotate(-90deg) translateY(-100px);
-} */
