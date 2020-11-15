@@ -4,6 +4,7 @@ const tools = document.querySelector("#tools");
 let imgLoaded = false;
 let blinker = setInterval(blink, 7000);
 
+//Blinks pixel image eyes
 function blink() {
   myPic.setAttribute("src", "./assets/images/dustinBlink.png");
   setTimeout(function () {
@@ -13,6 +14,7 @@ function blink() {
 
 blink();
 
+//Changes to real life image on click
 function imgChange() {
   if (!imgLoaded) {
     myPic.setAttribute("src", "./assets/images/picMe.png");
@@ -24,12 +26,14 @@ function imgChange() {
     imgLoaded = false;
   }
 }
+
+//Adds elements to page at specific scroll Y level
 function moveElements() {
-  if (scrollY >= 400) {
-    projects.classList.add("skills");
+  if (scrollY >= 300) {
+    projects.classList.add("move-in");
   }
-  if (scrollY >= 800) {
-    tools.classList.add("tools");
+  if (scrollY >= 700) {
+    tools.classList.add("move-in");
   }
   console.log(window.scrollY);
 }
