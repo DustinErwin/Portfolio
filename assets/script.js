@@ -38,6 +38,4 @@ function moveElements() {
   console.log(window.scrollY);
 }
 
-window.addEventListener("wheel", moveElements);
-
 myPic.addEventListener("click", imgChange);
