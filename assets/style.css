@@ -14,17 +14,21 @@ ul {
   opacity: 0.9;
   height: 3em;
   width: 100%;
+  padding: 10%;
   position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: space-around;
   flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #252222;
+}
+
+li {
+  margin: 0 2%;
 }
 
 li a {
