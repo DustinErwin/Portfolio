@@ -13,7 +13,7 @@
     <script defer src="./assets/script.js"></script>
   </head>
   <body onscroll="moveElements()">
-    <nav>
+    <nav class="navbar">
       <ul class="font-style">
         <li><a href="#">Home</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -38,7 +38,7 @@
           />
         </div>
       </div>
-      <div style="height: 20em"></div>
+      <div style="height: 30em"></div>
       <div>
         <div class="font-style">
           <div id="projects">
@@ -46,30 +46,80 @@
             <hr class="line-break" />
           </div>
           <div id="skills" style="opacity: 0">
-            <a href="https://dustinerwin.github.io/CouchSurf/"
+            <a class="project" href="https://dustinerwin.github.io/CouchSurf/"
               ><img
                 class="project-link"
                 src="./assets/images/couchSurf.png"
                 alt="Picture of Couch Surf: Pandemic App"
-            /></a>
-            <a href="https://dustinerwin.github.io/Weather-Dashboard/"
+              />
+              <div class="project-desc hide">
+                <p style="font-weight: bold; font-size: 2em; margin: 5px">
+                  Couch Surf
+                </p>
+                <p style="font-weight: 100">
+                  A dashboard app meant to kick off your web browsing with a
+                  liitle bit of everything. I designed the games section here
+                  and also created the game, Couch Blasters: Pandemic.
+                </p>
+                <p>Click to see!</p>
+              </div>
+            </a>
+            <a
+              class="project"
+              href="https://gym-logistical-tracker-duex.herokuapp.com/"
               ><img
                 class="project-link"
-                src="./assets/images/weatherDash.png"
+                src="./assets/images/devfit.png"
                 alt="Picture of Weather Dashboard App"
-            /></a>
-            <a href="https://dustinerwin.github.io/Day-Scheduler/"
+              />
+              <div class="project-desc hide">
+                <p style="font-weight: bold; font-size: 2em; margin: 5px">
+                  Dev Fit
+                </p>
+                <p style="font-weight: 100">
+                  Gym management application built to track client and employee
+                  actions and create a user friendly environment for both. I
+                  loved the team I worked with here as I did the final result.
+                </p>
+                <p>Click to see!</p>
+              </div></a
+            >
+            <a
+              class="project"
+              href="https://dustinerwin.github.io/Day-Scheduler/"
               ><img
                 class="project-link"
                 src="./assets/images/dayPlanner.png"
                 alt="Picture of Day Planner App"
-            /></a>
-            <a href="https://dustinerwin.github.io/Coding-Quiz/"
+              />
+              <div class="project-desc hide">
+                <p style="font-weight: bold; font-size: 2em; margin: 5px">
+                  Work Day Scheduler
+                </p>
+                <p style="font-weight: 100">
+                  A smart little app to keep track of your upcoming events for
+                  the day. Updates as time goes by will color coded fields.
+                </p>
+                <p>Click to see!</p>
+              </div></a
+            >
+            <a class="project" href="https://dustinerwin.github.io/Coding-Quiz/"
               ><img
                 class="project-link"
-                src="./assets/images/codingQuiz.png"
+                src="./assets/images/weatherDash.png"
                 alt="Picture of Coding Quiz"
-            /></a>
+              />
+              <div class="project-desc hide">
+                <p style="font-weight: bold; font-size: 2em; margin: 5px">
+                  Weather Dashboard
+                </p>
+                <p style="font-weight: 100">
+                  Weather forcast app that is simple and straight forward. Just
+                  type a city and it will give you the forecast for that area.
+                </p>
+                <p>Click to see!</p>
+              </div></a
+            >
           </div>
         </div>
         <div style="height: 20em"></div>
@@ -107,29 +157,33 @@
               src="./assets/images/bootstrap.jpg"
               alt="Bootstrap Icon"
             />
-            <img
-              class="img-me-pix"
-              src="./assets/images/mobilefirst.png"
-              alt=""
-            />
+            <img class="img-me-pix" src="./assets/images/node.png" alt="" />
           </div>
         </div>
         <div style="height: 20em"></div>
       </div>
     </main>
     <footer class="" style="margin: 0">
-      <div id="contact" class="contact font-style">
+      <div id="contact" class="font-style">
         <p style="font-size: 2em; margin: 0">Contact Me</p>
         <hr class="line-break" />
-        <a href="https://github.com/DustinErwin"
-          ><img class="contact-img" src="./assets/images/github.jpg" alt=""
-        /></a>
-        <a href="mailto:derwin499@gmail.com">
-          <img class="contact-img" src="./assets/images/email.jpg" alt="" />
-        </a>
-        <a href="https://www.linkedin.com/in/dustin-erwin-a126b61b6"
-          ><img class="contact-img" src="./assets/images/linkedIn.jpg" alt=""
-        /></a>
+        <div class="contact-info">
+          <a href="https://github.com/DustinErwin"
+            ><img
+              class="contact-img contact"
+              src="./assets/images/github.jpg"
+              alt=""
+          /></a>
+          <p class="email" style="font-size: 2em">Email: Derwin499@gmail.com</p>
+          <a
+            class="contact-a"
+            href="https://www.linkedin.com/in/dustin-erwin-a126b61b6"
+            ><img
+              class="contact-img contact"
+              src="./assets/images/linkedIn.jpg"
+              alt=""
+          /></a>
+        </div>
       </div>
     </footer>
   </body>

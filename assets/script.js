@@ -29,10 +29,10 @@ function imgChange() {
 
 //Adds elements to page at specific scroll Y level
 function moveElements() {
-  if (scrollY >= 300) {
+  if (scrollY >= 400) {
     projects.classList.add("move-in");
   }
-  if (scrollY >= 700) {
+  if (scrollY >= 800) {
     tools.classList.add("move-in");
   }
   console.log(window.scrollY);
