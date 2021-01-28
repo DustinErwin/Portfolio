@@ -32,10 +32,9 @@ function moveElements() {
   if (scrollY >= 400) {
     projects.classList.add("move-in");
   }
-  if (scrollY >= 800) {
+  if (scrollY >= 1600) {
     tools.classList.add("move-in");
   }
-  console.log(window.scrollY);
 }
 
 myPic.addEventListener("click", imgChange);

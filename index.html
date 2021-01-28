@@ -13,23 +13,25 @@
     <script defer src="./assets/script.js"></script>
   </head>
   <body onscroll="moveElements()">
+    <div class="sliding-background"></div>
     <nav class="navbar">
       <ul class="font-style">
         <li><a href="#">Home</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#tools">Tools</a></li>
+        <li><a href="#toolbelt">Tools</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="./assets/resume/Dustin Erwin Resume.pdf">Resume</a></li>
       </ul>
     </nav>
+
     <main class="container">
-      <div class="sliding-background"></div>
       <div class="intro" id="home">
         <div class="intro-info font-style">
           <h1 style="font-size: 4rem">Dustin Erwin</h1>
-          <p style="font-size: 2rem">Web Developer</p>
-          <p style="font-size: 1.5rem">
-            I'm a focused problem solver, with a passion for code and logic.
+          <p style="font-size: 2rem; margin-top: 0">Web Developer</p>
+          <p style="font-size: 1.5rem; margin-top: 0">
+            I'm a focused problem solver, with a passion for creating resilient
+            and impactful applications.
           </p>
           <img
             class="img-me-pix"
@@ -42,131 +44,171 @@
       <div>
         <div class="font-style">
           <div id="projects">
-            <h1>Projects</h1>
-            <hr class="line-break" />
+            <div>
+              <br />
+              <br />
+              <h1>Projects</h1>
+              <hr class="line-break" />
+              <br /><br />
+            </div>
           </div>
           <div id="skills" style="opacity: 0">
-            <a class="project" href="https://dustinerwin.github.io/CouchSurf/"
-              ><img
-                class="project-link"
-                src="./assets/images/couchSurf.png"
-                alt="Picture of Couch Surf: Pandemic App"
-              />
-              <div class="project-desc hide">
-                <p style="font-weight: bold; font-size: 2em; margin: 5px">
-                  Couch Surf
-                </p>
-                <p style="font-weight: 100">
-                  A dashboard app meant to kick off your web browsing with a
-                  liitle bit of everything. I designed the games section here
-                  and also created the game, Couch Blasters: Pandemic.
-                </p>
-                <p>Click to see!</p>
+            <div>
+              <div>
+                <a
+                  class="project"
+                  href="https://dustinerwin.github.io/CouchSurf/"
+                  ><img
+                    class="project-link"
+                    src="./assets/images/couchSurf.png"
+                    alt="Picture of Couch Surf: Pandemic App"
+                  />
+                  <div class="project-desc hide">
+                    <p style="font-weight: bold; font-size: 2em; margin: 5px">
+                      Couch Surf
+                    </p>
+                    <p style="font-weight: 100">
+                      A dashboard app meant to kick off your web browsing with a
+                      liitle bit of everything. I designed the games section
+                      here and also created the game, Couch Blasters: Pandemic.
+                    </p>
+                    <p>Click to see!</p>
+                  </div>
+                </a>
               </div>
-            </a>
-            <a
-              class="project"
-              href="https://gym-logistical-tracker-duex.herokuapp.com/"
-              ><img
-                class="project-link"
-                src="./assets/images/devfit.png"
-                alt="Picture of Weather Dashboard App"
-              />
-              <div class="project-desc hide">
-                <p style="font-weight: bold; font-size: 2em; margin: 5px">
-                  Dev Fit
-                </p>
-                <p style="font-weight: 100">
-                  Gym management application built to track client and employee
-                  actions and create a user friendly environment for both. I
-                  loved the team I worked with here as I did the final result.
-                </p>
-                <p>Click to see!</p>
-              </div></a
-            >
-            <a
-              class="project"
-              href="https://dustinerwin.github.io/Day-Scheduler/"
-              ><img
-                class="project-link"
-                src="./assets/images/dayPlanner.png"
-                alt="Picture of Day Planner App"
-              />
-              <div class="project-desc hide">
-                <p style="font-weight: bold; font-size: 2em; margin: 5px">
-                  Work Day Scheduler
-                </p>
-                <p style="font-weight: 100">
-                  A smart little app to keep track of your upcoming events for
-                  the day. Updates as time goes by will color coded fields.
-                </p>
-                <p>Click to see!</p>
-              </div></a
-            >
-            <a class="project" href="https://dustinerwin.github.io/Coding-Quiz/"
-              ><img
-                class="project-link"
-                src="./assets/images/weatherDash.png"
-                alt="Picture of Coding Quiz"
-              />
-              <div class="project-desc hide">
-                <p style="font-weight: bold; font-size: 2em; margin: 5px">
-                  Weather Dashboard
-                </p>
-                <p style="font-weight: 100">
-                  Weather forcast app that is simple and straight forward. Just
-                  type a city and it will give you the forecast for that area.
-                </p>
-                <p>Click to see!</p>
-              </div></a
-            >
+              <div>
+                <a
+                  class="project"
+                  href="https://gym-logistical-tracker-duex.herokuapp.com/"
+                  ><img
+                    class="project-link"
+                    src="./assets/images/devfit.png"
+                    alt="Picture of Weather Dashboard App"
+                  />
+                  <div class="project-desc hide">
+                    <p style="font-weight: bold; font-size: 2em; margin: 5px">
+                      Dev Fit
+                    </p>
+                    <p style="font-weight: 100">
+                      Gym management application built to track client and
+                      employee actions and create a user friendly environment
+                      for both. I loved the team I worked with here as I did the
+                      final result.
+                    </p>
+                    <p>Click to see!</p>
+                  </div></a
+                >
+              </div>
+            </div>
+            <div>
+              <div>
+                <a
+                  class="project"
+                  href="https://dustinerwin.github.io/Day-Scheduler/"
+                  ><img
+                    class="project-link"
+                    src="./assets/images/dayPlanner.png"
+                    alt="Picture of Day Planner App"
+                  />
+                  <div class="project-desc hide">
+                    <p style="font-weight: bold; font-size: 2em; margin: 5px">
+                      Work Day Scheduler
+                    </p>
+                    <p style="font-weight: 100">
+                      A smart little app to keep track of your upcoming events
+                      for the day. Updates as time goes by will color coded
+                      fields.
+                    </p>
+                    <p>Click to see!</p>
+                  </div></a
+                >
+              </div>
+              <div>
+                <a
+                  class="project"
+                  href="https://dustinerwin.github.io/Coding-Quiz/"
+                  ><img
+                    class="project-link"
+                    src="./assets/images/weatherDash.png"
+                    alt="Picture of Coding Quiz"
+                  />
+                  <div class="project-desc hide">
+                    <p style="font-weight: bold; font-size: 2em; margin: 5px">
+                      Weather Dashboard
+                    </p>
+                    <p style="font-weight: 100">
+                      Weather forcast app that is simple and straight forward.
+                      Just type a city and it will give you the forecast for
+                      that area.
+                    </p>
+                    <p>Click to see!</p>
+                  </div></a
+                >
+              </div>
+            </div>
           </div>
         </div>
         <div style="height: 20em"></div>
-        <div class="font-style">
+        <div id="toolbelt" class="font-style">
+          <br /><br />
           <h1>Technology Toolbelt</h1>
           <hr class="line-break" />
+          <br /><br />
           <div id="tools" style="opacity: 0">
-            <img
-              class="img-me-pix"
-              src="./assets/images/html5.png"
-              alt="HTML 5 Icon"
-            />
-            <img
-              class="img-me-pix"
-              src="./assets/images/css3.png"
-              alt="CSS 3 Icon"
-            />
-            <img
-              class="img-me-pix"
-              src="./assets/images/js.png"
-              alt="Javascript Icon"
-            />
-            <img
-              class="img-me-pix"
-              src="./assets/images/ajax.png"
-              alt="AJAX Icon"
-            />
-            <img
-              class="img-me-pix"
-              src="./assets/images/jquery.jpg"
-              alt="jQuery Icon"
-            />
-            <img
-              class="img-me-pix"
-              src="./assets/images/bootstrap.jpg"
-              alt="Bootstrap Icon"
-            />
-            <img class="img-me-pix" src="./assets/images/node.png" alt="" />
+            <div>
+              <div>
+                <img
+                  class="img-me-pix"
+                  src="./assets/images/html5.png"
+                  alt="HTML 5 Icon"
+                />
+              </div>
+              <div>
+                <img
+                  class="img-me-pix"
+                  src="./assets/images/css3.png"
+                  alt="CSS 3 Icon"
+                />
+              </div>
+              <div>
+                <img
+                  class="img-me-pix"
+                  src="./assets/images/js.png"
+                  alt="Javascript Icon"
+                />
+              </div>
+            </div>
+            <div>
+              <div>
+                <img
+                  class="img-me-pix"
+                  src="./assets/images/react.png"
+                  alt="jQuery Icon"
+                />
+              </div>
+              <div>
+                <img
+                  class="img-me-pix"
+                  src="./assets/images/mongodb.png"
+                  alt="Bootstrap Icon"
+                />
+              </div>
+              <div>
+                <img class="img-me-pix" src="./assets/images/node.png" alt="" />
+              </div>
+            </div>
           </div>
         </div>
         <div style="height: 20em"></div>
       </div>
     </main>
-    <footer class="" style="margin: 0">
+    <footer style="margin: 0">
       <div id="contact" class="font-style">
+        <br /><br /><br />
         <p style="font-size: 2em; margin: 0">Contact Me</p>
         <hr class="line-break" />
+        <br />
+        <br />
         <div class="contact-info">
           <a href="https://github.com/DustinErwin"
             ><img
@@ -185,6 +227,7 @@
           /></a>
         </div>
       </div>
+      <div style="height: 400px"></div>
     </footer>
   </body>
 </html>
